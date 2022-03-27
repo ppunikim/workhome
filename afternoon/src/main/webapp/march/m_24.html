@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ul</title>
+<style>
+div{ width:300px; border:1px solid #ccc; margin:50px; }
+ul{ list-style: none; padding: 20px 50px }
+
+#one ul li{border:1px solid; padding:20px; margin:5px; }
+#two ul li:not(:last-child) {border:1px solid; padding:20px;
+           margin-bottom: 30px;
+ }
+
+</style>
+
+
+
+</head>
+<body>
+
+<div id='one'>
+    <ul>
+        <li>회사 소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>동영상 강의</li>
+    </ul>
+</div>
+
+<div id='two'>
+    <ul>
+        <li>회사 소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>동영상 강의</li>
+    </ul>
+</div>
+
+
+</body>
+</html>
