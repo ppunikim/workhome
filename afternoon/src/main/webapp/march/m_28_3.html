@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<style>
+body { margin : 0 auto;}
+#header { border-bottom:1px solid #ccc;
+          padding:20px 0; }
+#top { height:300px; 
+       background:url(../media/picture/bird.jpg );
+       background-size:cover;}
+
+
+#title { background-color: #fff; 
+         width: 150px;
+         padding: 0 20px;
+         right: 20px; 
+         top: 150px;
+         position: fixed;
+/*       position: absolute; */
+ }
+ .layer { position: relative; } 
+ .layer div { position: absolute; 
+              padding: 20px;
+              border: 1px solid;
+}
+
+.layer1 { z-index:100; background-color: pink; left: 0px; top:0px;}
+.layer2 { /* visibility:hidden; */ /* display:none; */  z-index:103;background-color: yellow; left: 50px; top:50px; }
+.layer3 { z-index:102;background-color: olive; left: 100px; top:100px;}
+/* 태그의 순서를 지정해서 태그가 쌓이는 위치를 다르게 
+할 수 있다.: z-index */
+/* 태그를 보이게/보이지않게 하는 속성 
+: visibility : hidden     / visible => 공간을 차지함
+: display: none          / block, inline, inline-block =>공간차지x
+ */
+ 
+
+</style>
+</head>
+<body>
+<a href='./m_28_1.html'>웹 실습(위치)</a>
+
+<!-- <h2>position</h2> -->
+<!-- <p> -->
+<!-- 요소의 배치: static, relative, absolute, fixed<br> -->
+<!-- static, relative : 요소의 순서대로 배치된다. -->
+<!-- <br>static, relative 차이점:  
+absolute : 절대좌표위치를 부모요소 기준으로 갖는다.
+relative : 상대좌표 위치를 부모요소 기준으로 갖는다. 즉,relative는 상하좌우 좌표를 지정할 수 있다.
+
+fixed: 절대좌표위치를 브라우저 기준으로 갖는다.
+   <br>  - 브라우저에서 세로 스크롤시 위치를 고정시키고자 할 때 주로 사용한다. 
+-->
+                  
+<!-- </p> -->
+
+<div id='header' >헤더부분</div>
+<div id='top'></div>
+<div id='title'>
+   <h4>position 적용하기</h4>
+   <p>absolute</p>
+   <p>relative</p>
+   <p>fixed</p>
+</div>
+<hr>
+<div class='layer'>
+    <div class='layer1'>레이어 순서1</div>
+    <div class='layer2'>레이어 순서2</div>
+    <div class='layer3'>레이어 순서3</div>
+</div>
+
+
+
+</body>
+</html>
