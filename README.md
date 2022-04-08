@@ -1,1 +1,3 @@
-# git 프로젝트 업로드 테스트
+# 2022.04.09 할 일
+
+- VScode로 html과 javascript구현하기
