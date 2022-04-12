@@ -51,7 +51,7 @@ public class Var_02 {
 		*/
 		System.out.println("\t============================================");
 		System.out.printf("\t%.2f + %.2f = %8.2f\n", douNum1, douNum2, douSum);
-		System.out.printf("\t%.2f x %.2f = %8.2f\n", douNum1, douNum2, douMulti);
+		System.out.printf("\t%.2f x %.2f = %10.2f\n", douNum1, douNum2, douMulti);
 		
 		
 	}

@@ -34,7 +34,7 @@ public class Var_04 {
 		
 		//변수에 저장된 문자와 문자의 코드값(code value) 을 확인
 		System.out.printf("\t%c : %d \n",charA, intA);
-		System.out.printf("\t%c : %d \n",charA, intB);
+		System.out.printf("\t%c : %d \n",charB, intB);
 	}
 
 }
