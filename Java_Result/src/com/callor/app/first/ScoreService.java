@@ -26,8 +26,6 @@ public class ScoreService {
 			scVO.setIntAvg(Avg);
 			scList.add(scVO);
 		}//end for
-		
-		
 	}//end makeScore
 	
 	
@@ -44,4 +42,36 @@ public class ScoreService {
 		}//end for
 	}//end scorePrint
 	
+	public static int leng = 20;
+	public void printSum() {
+		int intKorSum = 0;
+		int intEngSum = 0;
+		int intMathSum = 0;
+		int intSumSum = 0;
+		for(ScoreVO scVO : scList) {
+			intKorSum += scVO.getIntKor() / leng;
+			intEngSum += scVO.getIntEng() / leng;
+			intMathSum += scVO.getIntMath() / leng;
+			intSumSum += scVO.getIntSum() / leng;
+		}//end for
+		System.out.printf("총평균   %d \t %d \t %d \t %d \t -\n"
+							,intKorSum, intEngSum, intMathSum, intSumSum
+				);
+		
+	}//end printSum
+	
 }//end class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
