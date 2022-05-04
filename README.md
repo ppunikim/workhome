@@ -2,6 +2,6 @@
 
 - VScode로 html과 javascript구현하기
 
-:cat: 
-:dog:
-💝
+# :cat: 
+# :dog:
+# 💝
